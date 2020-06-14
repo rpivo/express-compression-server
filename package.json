@@ -1,11 +1,15 @@
 {
   "name": "express-compression-server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "express server that serves compressed files from a given folder.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "keywords": [
+    "build",
+    "javascript",
+    "server",
+    "compression",
+    "typescript"
+  ],
+  "main": "bin/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rpivo/express-compression-server.git"
