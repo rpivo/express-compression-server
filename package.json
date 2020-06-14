@@ -1,6 +1,6 @@
 {
   "name": "express-compression-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "express server that serves compressed files from a given folder.",
   "keywords": [
     "build",
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/rpivo/express-compression-server/issues"
   },
-  "homepage": "https://github.com/rpivo/express-compression-server#readme"
+  "homepage": "https://github.com/rpivo/express-compression-server#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "express-static-gzip": "^2.0.6"
+  }
 }
