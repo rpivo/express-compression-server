@@ -20,6 +20,9 @@
     "url": "https://github.com/rpivo/express-compression-server/issues"
   },
   "homepage": "https://github.com/rpivo/express-compression-server#readme",
+  "bin": {
+    "express-compression-server": "./bin/index.js"
+  },
   "dependencies": {
     "@types/node": "^14.0.13",
     "express": "^4.17.1",
