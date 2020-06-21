@@ -17,9 +17,11 @@ const options = yargs
 
   console.log(build);
 
-// const app = express();
-// const port = 3000; // add dynamic import to yargs
+const app = express();
+const port = 1235;
 
-// app.use('/', expressStaticGzip('/', {
-//   enableBrotli: true,
-// }));
+app.use('/', expressStaticGzip(`${build}`, {
+  enableBrotli: true,
+}));
+
+app.listen(port, () => console.log(`\n\nbuild: http://localhost:${port}/index.html`));
