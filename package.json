@@ -1,6 +1,17 @@
 {
   "name": "express-compression-server",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpivo/express-compression-server.git"
+  },
   "version": "0.0.3",
+  "type": "module",
+  "homepage": "https://github.com/rpivo/express-compression-server#readme",
+  "bugs": {
+    "url": "https://github.com/rpivo/express-compression-server/issues"
+  },
+  "license": "ISC",
+  "author": "Ryan Pivovar <ryanpivovar@gmail.com> (https://github.com/rpivo)",
   "description": "express server that serves compressed files from a given folder.",
   "keywords": [
     "build",
@@ -9,22 +20,12 @@
     "compression",
     "typescript"
   ],
-  "main": "bin/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rpivo/express-compression-server.git"
-  },
-  "author": "Ryan Pivovar <ryanpivovar@gmail.com> (https://github.com/rpivo)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rpivo/express-compression-server/issues"
-  },
-  "homepage": "https://github.com/rpivo/express-compression-server#readme",
-  "bin": {
-    "express-compression-server": "./bin/index.js"
-  },
+  "main": "bin/index.mjs",
+  "bin": { "express-compression-server": "./bin/index.mjs" },
   "dependencies": {
+    "@types/express": "^4.17.6",
     "@types/node": "^14.0.13",
+    "@types/yargs": "^15.0.5",
     "express": "^4.17.1",
     "express-static-gzip": "^2.0.6",
     "yargs": "^15.3.1"
