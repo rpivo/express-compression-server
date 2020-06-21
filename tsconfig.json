@@ -12,6 +12,6 @@
     "outDir": "./bin",
     "strict": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "es5",
+    "target": "esnext",
   }
 }
