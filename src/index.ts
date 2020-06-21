@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-const express = require('express');
-const expressStaticGzip = require('express-static-gzip');
-const yargs = require('yargs');
+import express from 'express';
+import expressStaticGzip from 'express-static-gzip';
+import yargs from 'yargs';
 
 const options = yargs
   .usage('Usage: -b <build>')

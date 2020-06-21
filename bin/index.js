@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-"use strict";
-var express = require('express');
-var expressStaticGzip = require('express-static-gzip');
-var yargs = require('yargs');
-var options = yargs
+import yargs from 'yargs';
+// const express = require('express');
+// const expressStaticGzip = require('express-static-gzip');
+// const yargs = require('yargs');
+const options = yargs
     .usage('Usage: -b <build>')
     .option('b', {
     alias: 'build',
@@ -12,7 +12,7 @@ var options = yargs
     demandOption: true,
 })
     .argv;
-var build = options.build;
+const { build } = options;
 console.log(build);
 // const app = express();
 // const port = 3000; // add dynamic import to yargs
