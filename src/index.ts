@@ -11,17 +11,21 @@ const options = yargs
     type: 'string',
     demandOption: true,
   })
+  .option('p', {
+    alias: 'port',
+    describe: 'port to be used for server',
+    type: 'number',
+  })
   .argv;
 
-  const { build } = options;
+const { build, port } = options;
 
-  console.log(build);
+console.log(build);
 
 const app = express();
-const port = 1235;
 
 app.use('/', expressStaticGzip(`${build}`, {
   enableBrotli: true,
 }));
 
-app.listen(port, () => console.log(`\n\nbuild: http://localhost:${port}/index.html`));
+app.listen(port, () => console.log(`\n\nbuild: http://localhost:${port || 1235}/index.html`));
