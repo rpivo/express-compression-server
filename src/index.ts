@@ -20,12 +20,8 @@ const options = yargs
 
 const { build, port } = options;
 
-console.log(build);
-
 const app = express();
-
 app.use('/', expressStaticGzip(`${build}`, {
   enableBrotli: true,
 }));
-
 app.listen(port, () => console.log(`\n\nbuild: http://localhost:${port || 1235}/index.html`));

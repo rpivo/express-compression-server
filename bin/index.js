@@ -17,7 +17,6 @@ const options = yargs
 })
     .argv;
 const { build, port } = options;
-console.log(build);
 const app = express();
 app.use('/', expressStaticGzip(`${build}`, {
     enableBrotli: true,
