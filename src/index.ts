@@ -10,7 +10,7 @@ type Options = {
 };
 
 const options = yargs
-  .usage('Usage: -b <build>')
+  .usage('Usage: -b <build> -p <port>')
   .option('b', {
     alias: 'build',
     describe: 'location of build to be served',
