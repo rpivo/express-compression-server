@@ -23,7 +23,7 @@ const options = yargs
     describe: 'port to be used for server',
     type: 'number',
   })
-  .argv as unknown as Options;
+  .argv as unknown as Options; // todo: clean up this type
 
 const { build, port = 1235 } = options;
 
