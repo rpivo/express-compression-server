@@ -4,7 +4,7 @@
     "type": "git",
     "url": "git+https://github.com/rpivo/express-compression-server.git"
   },
-  "version": "1.1.4",
+  "version": "1.1.5",
   "type": "module",
   "homepage": "https://github.com/rpivo/express-compression-server#readme",
   "bugs": {

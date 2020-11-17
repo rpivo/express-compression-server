@@ -4,7 +4,7 @@
     "baseUrl": "./src",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
+    "module": "ESNext",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "noImplicitThis": true,
@@ -12,6 +12,6 @@
     "outDir": "./bin",
     "strict": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "esnext",
+    "target": "ES2020",
   }
 }
