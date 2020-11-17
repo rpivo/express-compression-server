@@ -4,7 +4,7 @@
     "type": "git",
     "url": "git+https://github.com/rpivo/express-compression-server.git"
   },
-  "version": "1.1.3",
+  "version": "1.1.4",
   "type": "module",
   "homepage": "https://github.com/rpivo/express-compression-server#readme",
   "bugs": {
@@ -31,11 +31,9 @@
     "update": "npx npm-check-updates -u"
   },
   "dependencies": {
-    "@types/yargs": "^15.0.9",
     "browser-sync": "^2.26.13",
     "express": "^4.17.1",
-    "express-static-gzip": "^2.1.0",
-    "yargs": "^15.4.1"
+    "express-static-gzip": "^2.1.0"
   },
   "devDependencies": {
     "@types/browser-sync": "^2.26.1",
