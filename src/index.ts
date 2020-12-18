@@ -4,29 +4,21 @@ import express from 'express';
 import expressStaticGzip from 'express-static-gzip';
 import path from 'path';
 
-enum DefaultParams {
-  '--build' = 'dist',
-  '--port' = '1000',
-}
-
 enum Params {
   BUILD = '--build',
   PORT = '--port',
 }
 
-const paramMap: {
-  '--build'?: string;
-  '--port'?: string;
-} = {};
-
-const [...params] = process.argv.slice(2);
-
-params.forEach(param => {
-  const [key, value] = param.split('=');
-  paramMap[key] = value;
-});
-
-for (const key in DefaultParams) paramMap[key] ??= DefaultParams[key];
+const paramMap: Record<Params, string> = Object.assign({}, {
+    [Params.BUILD]: 'dist',
+    [Params.PORT]: '1000',
+  },
+  process.argv.slice(2).reduce((obj, param) => {
+    const [key, value] = param.split('=');
+    if (Object.values(Params).includes(key as Params)) obj[key] = value;
+    return obj;
+  }, {}),
+);
 
 const {
   [Params.BUILD]: build,
